@@ -1,0 +1,360 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: Helvetica;
+  font-size: 16px;
+}
+.ancho{
+  max-width: 1200px;
+  margin: auto;
+}
+.titulo{
+  text-align: center;
+  padding-top: 50px;
+  margin: auto;
+  max-width: 1200px;
+}
+.text_azul{
+  color: #0C58E1;
+  margin-bottom: 10px;
+}
+.titulo h1{
+font-size: 35px;
+}
+.linea{
+  background-color: #CBBDF1;
+  padding: 2px;
+  max-width: 70px;
+  margin: auto;
+}
+.portafolio{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.foto1{
+  filter: grayscale(0%);
+  transition: all .5s;
+  position: relative;
+}
+.ft_portafolio{
+  max-width: 370px;
+  overflow: hidden;
+  margin-bottom: 35px;
+}
+.ft_portafolio img{
+  width: 100%;
+}
+.foto1:hover{
+  filter: grayscale(100%);
+}
+.foto1:hover .cdro_portafolio{
+opacity: 1;
+}
+.cdro_portafolio{
+  background-color: #555555;
+  border: 1px #555555 solid;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  padding: 15px 50px 15px 50px;
+  position: absolute;
+  z-index: 3;
+  top: calc(360px - 40%);
+  left: 70px;
+  opacity: 0;
+  transition: all .5s;
+}
+.cdro_portafolio h5{
+  font-weight: normal;
+  margin-top: 10px;
+}
+.cdro_portafolio h4{
+  font-weight: lighter;
+}
+.cdro_portafolio:hover{
+  opacity: 1;
+}
+.buscador{
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: auto;
+}
+.cont_azul{
+  background-color: #EFF2F7;
+  margin: auto;
+}
+.team{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+.miembros{
+  max-width: 270px;
+  position: relative;
+  margin: auto;
+  line-height: 0;
+}
+.ft_miembro{
+  max-width: 270px;
+  display: inline-block;
+  line-height: 0;
+  overflow: hidden;
+}
+.ft_miembro img{
+  width: 100%;
+}
+.nombre{
+  max-width: 270px;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  line-height: 20px;
+  margin: auto;
+  border-bottom: 1px #0C58E1 solid;
+}
+.azul{
+  color: #0C58E1;
+  font-size: 12px;
+}
+.cont_filtro{
+  position: absolute;
+  width: 270px;
+  height: 325px;
+  background-color: #0C58E1;
+  padding: 20px;
+  z-index: 3;
+  overflow: hidden;
+  top: 0;
+  opacity: 0;
+  transition: all .5s;
+}
+.miembros:hover .cont_filtro{
+  opacity: .5;
+}
+.iconos{
+  color: #0C58E1;
+}
+.redes{
+  width: 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  position: absolute;
+  top: calc(270px - 50%);
+  left: 220px;
+  opacity: 0;
+  transition: all .5s;
+  z-index: 4;
+}
+.miembros:hover .redes{
+  opacity: 1;
+}
+.cont_planes{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.planes{
+  border: 1px #555555 solid;
+  padding: 50px 60px 50px 60px;
+  border-radius: 10px;
+  max-width: 400px;
+  transition: all -5s;
+}
+.planes h1{
+  color: #0C58E1;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.planes:hover{
+  border: 1px #0C58E1 solid;
+  box-shadow: 0px 0px 5px #0c58e1;
+}
+
+.cdro_planes{
+  border: 1px #555555 solid;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 40px 25px 40px 25px;
+  transition: all .5s;
+}
+.cdro_planes:hover{
+  border: 1px #0C58E1 solid;
+}
+.planes:hover .cdro_planes{
+  border: 1px #0C58E1 solid;
+}
+.icn_dolar{
+  color: #0C58E1;
+}
+.cont_precio{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  font-weight: bold;
+}
+.precio{
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.numero{
+  font-size: 50px;
+  color: #0C58E1;
+}
+.meses{
+  display: flex;
+  padding: 15px 15px 15px 0px;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: #0C58E1;
+}
+.btn_planes{
+  border: 1px #0C58E1 solid;
+  text-decoration: none;
+  color: #333;
+  padding: 15px 30px 15px 30px;
+  margin-left: 40px;
+  border-radius: 5px;
+  background-color: white;
+  transition: all .5s;
+}
+.btn_planes:hover{
+  background-color: #0C58E1;
+  color: white;
+}
+.articulos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.info_articulos{
+  max-width: 350px;
+  border: 1px #EBEBEB solid;
+  background-color: white;
+  overflow: hidden;
+}
+.info_articulos figure{
+  max-width: 350px;
+  overflow: hidden;
+}
+.info_articulos figure img{
+  width: 100%;
+  transform: scale(1);
+  transition: all .5s;
+}
+.info_articulos figure img:hover{
+  transform: scale(2);
+}
+.text_articulo{
+  padding: 20px;
+  line-height: 25px;
+}
+.text_articulo p{
+  margin-bottom: 10px;
+}
+.text_articulo h2{
+  margin-bottom: 10px;
+}
+.icn_flecha{
+  color: #555555;
+  padding: 5px;
+  margin-top: 5px;
+}
+.leerms{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.leerms p{
+  padding: 5px;
+}
+@media screen and (max-width:414px){
+  .titulo{
+    padding: 10px;
+    width: 350px;
+    border: 1px red solid;
+    margin: 0;
+    margin-left: 18px;
+  }
+  .titulo h1{
+    font-size: 30px;
+    }
+    .portafolio{
+      width: 350px;
+      margin-left: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .ft_portafolio{
+      max-width: 300px;
+    }
+    .ft_portafolio img{
+      width: 100%;
+    }
+    .foto1:hover{
+      filter: grayscale(100%);
+    }
+    .foto1:hover .cdro_portafolio{
+    opacity: 1;
+    }
+    .cdro_portafolio{
+      border-radius: 5px;
+      color: white;
+      text-align: center;
+      padding: 15px 50px 15px 50px;
+      position: absolute;
+      z-index: 3;
+      top: calc(300px - 40%);
+      left: 32px;
+      opacity: 0;
+      transition: all .5s;
+    }
+    .cdro_portafolio h5{
+      font-weight: normal;
+      margin-top: 10px;
+    }
+    .cdro_portafolio h4{
+      font-weight: lighter;
+    }
+    .cdro_portafolio:hover{
+      opacity: 1;
+}
+
